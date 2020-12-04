@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
  
-from utils import sample_noise, show_images, deprocess_img, preprocess_img
+from gan_utils import sample_noise, show_images, deprocess_img, preprocess_img
  
 def train(D, G, D_solver, G_solver, discriminator_loss, generator_loss, show_every=250,
               batch_size=128, noise_size=100, num_epochs=10, train_loader=None, device=None):
@@ -220,7 +220,7 @@ def ls_generator_loss(logits_fake):
 import matplotlib.pyplot as plt
 import matplotlib.gridspec as gridspec
  
-from utils import sample_noise, show_images, deprocess_img, preprocess_img
+from gan_utils import sample_noise, show_images, deprocess_img, preprocess_img
  
 def train2(D, G, D_solver, G_solver, discriminator_loss, generator_loss, show_every=250,
               batch_size=128, noise_size=100, num_epochs=10, train_loader=None, device=None):
